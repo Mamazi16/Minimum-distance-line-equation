@@ -27,7 +27,7 @@
                     continue;
                 }
 
-                string[] parts = input.Split(' ');
+                string[] parts = input.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
                 if (parts.Length != 2)
                 {
@@ -79,4 +79,5 @@
 
         Console.WriteLine("\n Line Equation:");
         Console.WriteLine($"y = {a:F4}x + {b:F4}");
+
 
